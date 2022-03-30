@@ -20,7 +20,7 @@ git clone https://github.com/espressoAndCode/ml-laptop-setup.git
 ### Run the installation script
 ```
 cd ml-laptop-setup
-bash setup.sh
+bash setup.sh && source $HOME/.bashrc
 ```
 
 
