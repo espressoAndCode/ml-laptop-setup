@@ -30,13 +30,13 @@ sudo apt install code -y
 
 
 
-# Verify python3.10 installed
+# Verify python3.10 version
 python3.10 --version
 
-# Verify Docker daemon process start on boot
-sudo systemctl status docker
+# Verify docker version
+docker --version
 
-# Verify successful installation of docker-compose
+# Verify docker-compose version
 docker-compose --version
 
 # Verify VSCode version
