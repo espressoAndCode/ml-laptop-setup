@@ -1,6 +1,6 @@
 # Machine Learning Laptop Setup
 
-This repo is designed to run on Linux, and you must have `git` installed.
+This repo is designed to run on Ubuntu, and is verified in version 20.04. You must have `git` installed and have admin rights.
 
 ## Initial Setup
 ### Install `git`
@@ -18,6 +18,8 @@ git clone https://github.com/espressoAndCode/ml-laptop-setup.git
 ```
 
 ### Run the installation script
+
+Note: You will be asked to enter your sudo password.
 ```
 cd ml-laptop-setup
 bash setup.sh && source $HOME/.bashrc
