@@ -33,15 +33,15 @@ sudo apt install code -y
 
 
 # Add custom additions to .bashrc file
-cat on_shell_start.sh >> $HOME/.bashrc
+cat "on_shell_start.sh" >> "$HOME/.bashrc"
 source $HOME/.bashrc
 
 # Add standard directories
-mkdir $HOME/Data 
-mkdir $HOME/Dev
+mkdir "$HOME/Data" 
+mkdir "$HOME/Dev"
 
 # Copy starter templates to Dev/ directory
-cp -a _templates/. $HOME/Dev/
+cp -a "_templates/." "$HOME/Dev/"
 
 
 echo ""
