@@ -40,7 +40,7 @@ code --install-extension ms-vscode-remote.remote-ssh-edit
 
 # Add custom additions to .bashrc file
 cat "on_shell_start.sh" >> "$HOME/.bashrc"
-source "$HOME/.bashrc"
+
 
 # Add standard directories
 mkdir "$HOME/Data" 
