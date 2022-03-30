@@ -48,18 +48,20 @@ Run this command from inside the project folder. Alternatively, you can just clo
 dct
 ```
 
+## Sanity Checks
 
-## Docker
+### Docker
 
-Verify Docker daemon process start on boot
+The Docker daemon process should start on completion of the installation script, and on boot. Run the following if you need to verify. 
 ```
 sudo systemctl status docker
+# Kill the process with Ctrl-C
 ```
 
 
-## VS Code
+### VS Code
 
-### Verify VSCode version
+Run the following to verify the VSCode version.
 ```
 code --version 
 ```
