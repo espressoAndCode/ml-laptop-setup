@@ -28,7 +28,7 @@ bash setup.sh && source $HOME/.bashrc
 ## Usage Instructions
 
 ### To create a new python project
-You can create a new project from anywhere, it will be set up in the `Dev` folder.
+You can create a new project from anywhere, it will be set up in the `Dev` folder. The first command will navigate you into the project folder. If you have additional dependencies, you can add them to the `requirements.txt` file prior to running the `pip install` line o you can add them later. It's fine to run this multiple times, as the previously installed dependencies are cached and will not be re-installed.
 ```
 mpp <project-name>
 makeenv
