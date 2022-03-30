@@ -8,11 +8,17 @@ sudo apt-get update
 sudo apt-get install git
 ```
 
-## Pull the repo
+## Clone this repo
 
 Navigate to your user root directory and pull this repo:
 ```
 cd ~
 git clone https://github.com/espressoAndCode/ml-laptop-setup.git
+```
+
+## Run the installation script
+```
+cd ml-laptop-setup
+sudo bash setup.sh
 ```
 
