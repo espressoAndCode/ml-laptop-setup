@@ -1,1 +1,2 @@
-# ml-laptop-setup
+# Machine Learning Laptop Setup
+
