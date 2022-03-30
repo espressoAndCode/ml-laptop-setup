@@ -68,5 +68,9 @@ code --version
 
 ## Documentation
 
+- [Python 3.10](https://docs.python.org/3/)
+- [Tensorflow](https://www.tensorflow.org/)
 - [Docker](https://docs.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [VS Code](https://code.visualstudio.com/docs)
 
