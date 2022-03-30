@@ -42,7 +42,7 @@ docker --version
 docker-compose --version
 
 # Verify VSCode version
-code --version
+# code --version # commented out - throws due to running as sudo
 
 # Add custom additions to .bashrc file
 cat on_shell_start.sh >> $HOME/.bashrc
