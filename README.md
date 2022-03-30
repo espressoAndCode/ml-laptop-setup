@@ -25,6 +25,28 @@ cd ml-laptop-setup
 bash setup.sh && source $HOME/.bashrc
 ```
 
+## Usage Instructions
+
+### To create a new python project
+You can create a new project from anywhere, it will be set up in the `Dev` folder.
+```
+mpp <project-name>
+makeenv
+act <project-name>
+pip install -r requirements.txt
+```
+
+### To activate an existing project
+You can execute this command from anywhere, it will navigate to the project in the `Dev` folder. Don't forget to include the project name!
+```
+act <project-name>
+```
+
+### To deactivate a running environment
+Run this command from inside the project folder. Alternatively, you can just close the terminal.
+```
+dct
+```
 
 
 ## Docker
