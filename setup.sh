@@ -47,7 +47,7 @@ mkdir "$HOME/Data"
 mkdir "$HOME/Dev"
 
 # Copy starter templates to Dev/ directory
-cp -a "_templates/." "$HOME/Dev/"
+cp -a "_templates/." "$HOME/Dev/_templates"
 
 
 echo ""
