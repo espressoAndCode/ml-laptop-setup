@@ -31,17 +31,17 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 sudo apt install code -y
 
 
-
+USER_PATH=$HOME
 # Add custom additions to .bashrc file
-cat "on_shell_start.sh" >> "$HOME/.bashrc"
-source $HOME/.bashrc
+cat "on_shell_start.sh" >> "$USER_PATH/.bashrc"
+source $USER_PATH/.bashrc
 
 # Add standard directories
-mkdir "$HOME/Data" 
-mkdir "$HOME/Dev"
+mkdir "$USER_PATH/Data" 
+mkdir "$USER_PATH/Dev"
 
 # Copy starter templates to Dev/ directory
-cp -a "_templates/." "$HOME/Dev/"
+cp -a "_templates/." "$USER_PATH/Dev/"
 
 
 echo ""
