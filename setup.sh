@@ -34,7 +34,7 @@ sudo apt install code -y
 USER_PATH=$HOME
 # Add custom additions to .bashrc file
 cat "on_shell_start.sh" >> "$USER_PATH/.bashrc"
-source $USER_PATH/.bashrc
+source "$USER_PATH/.bashrc"
 
 # Add standard directories
 mkdir "$USER_PATH/Data" 
