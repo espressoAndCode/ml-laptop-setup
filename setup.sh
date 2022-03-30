@@ -4,19 +4,19 @@
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt update && sudo apt upgrade -y
-sudo apt install python3.10
-sudo apt install python3.10-dev
-sudo apt install python3.10-venv
+sudo apt install python3.10 -y
+sudo apt install python3.10-dev -y
+sudo apt install python3.10-venv -y
 
 # Install docker
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-sudo apt update
-sudo apt install docker-ce
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" -y
+sudo apt update -y
+sudo apt install docker-ce -y
 
 # Allow current user access to docker without sudo
-sudo usermod -aG docker ${USER}
+sudo usermod -aG docker ${USER} -y
 
 # Install docker-compose
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
