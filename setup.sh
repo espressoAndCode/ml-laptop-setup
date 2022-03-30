@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Install Python3.10, Docker, Docker Compose, and VSCode 
+
 # Install python3.10
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa -y
@@ -28,8 +30,8 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" -y
 sudo apt install code -y
 
-
-
+echo ""
+echo "The following packages have been installed:"
 # Verify python3.10 version
 python3.10 --version
 
@@ -41,3 +43,16 @@ docker-compose --version
 
 # Verify VSCode version
 code --version
+
+# Add custom additions to .bashrc file
+cat on_shell_start.sh >> $HOME/.bashrc
+source $HOME/.bashrc
+
+# Add standard directories
+mkdir $HOME/Data 
+mkdir $HOME/Dev
+
+# Copy starter templates to Dev/ directory
+cp -a _templates/. $HOME/Dev/
+
+
