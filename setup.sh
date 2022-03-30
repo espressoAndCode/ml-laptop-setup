@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Install Python3.10, Docker, Docker Compose, and VSCode 
 
