@@ -31,3 +31,11 @@ Verify Docker daemon process start on boot
 ```
 sudo systemctl status docker
 ```
+
+
+## VS Code
+
+### Verify VSCode version
+```
+code --version 
+```
