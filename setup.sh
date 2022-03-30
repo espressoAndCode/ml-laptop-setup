@@ -30,19 +30,7 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" -y
 sudo apt install code -y
 
-echo ""
-echo "The following packages have been installed:"
-# Verify python3.10 version
-python3.10 --version
 
-# Verify docker version
-docker --version
-
-# Verify docker-compose version
-docker-compose --version
-
-# Verify VSCode version
-# code --version # commented out - throws due to running as sudo
 
 # Add custom additions to .bashrc file
 cat on_shell_start.sh >> $HOME/.bashrc
@@ -55,4 +43,15 @@ mkdir $HOME/Dev
 # Copy starter templates to Dev/ directory
 cp -a _templates/. $HOME/Dev/
 
+
+echo ""
+echo "The following packages have been installed:"
+# Verify python3.10 version
+python3.10 --version
+
+# Verify docker version
+docker --version
+
+# Verify docker-compose version
+docker-compose --version
 
