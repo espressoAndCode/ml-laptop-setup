@@ -25,6 +25,36 @@ cd ml-laptop-setup
 bash setup.sh && source $HOME/.bashrc
 ```
 
+### PYTHONPATH setup in virtual environment
+
+This step is not mandatory, but it's nice to have. The project automatically includes a folder called `pythonmodules` where you can store all of your project-specific reusable python modules. If you add the following code, the `PYTHONPATH` environment variable will be set automatically when you activate the env, and cleared when you deactivate.
+
+From your top-level project folder, navigate to the `env/bin/activate` file. The first function you will see is `deactivate`. Add a line and enter `export PYTHONPATH=""` as shown here:
+
+```bash
+deactivate () {
+    export PYTHONPATH=""    ### ADD THIS LINE ###
+    # reset old environment variables
+    ...
+```
+Note: If your main os has a `PYTHONPATH` configured, enter that instead of the empty string. This is the python path that will be set when you deactivate the project's virtual environment.
+
+Next, add the following code to the end of the `activate` file:
+
+```bash
+PROJDIR=$(echo "$VIRTUAL_ENV" | sed 's|\(.*\)/.*|\1|')
+export PYTHONPATH="$PROJDIR/pythonmodules"
+```
+
+This will cause the `PYTHONPATH` environment variable to be automatically set to the `pythonmodules` folder inside your project.
+
+If you want to add additional module paths in your project, you can modify the last line as follows:
+
+```bash
+export PYTHONPATH="$PROJDIR/pythonmodules:$PROJDIR/<another module>:$PROJDIR/<yet another module>"
+```
+
+
 ## Usage Instructions
 
 ### To create a new python project
