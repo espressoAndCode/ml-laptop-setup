@@ -143,7 +143,7 @@ code --version
 
 ## Version History
 
-* 0.2
+* 0.2 - 4/1/2022
     * Add logic to prevent creating (and thus overwriting) a project with an existing project name
     * Add logic to not overwrite existing `Dev` or `Data` files in re-install
     * Note - the `_templates` folder is not protected, and WILL be overwritten on re-installation
