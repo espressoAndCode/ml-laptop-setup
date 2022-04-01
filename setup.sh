@@ -45,11 +45,11 @@ fi
 
 
 # Add standard directories
-if [ ! -d "${HOME/Data}" ]; then
+if [ ! -d "$HOME/Data" ]; then
     mkdir "$HOME/Data" 
 fi
 
-if [ ! -d "${HOME/Dev}" ]; then
+if [ ! -d "$HOME/Dev" ]; then
     mkdir "$HOME/Dev" 
 fi
 
