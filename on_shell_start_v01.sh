@@ -19,7 +19,7 @@ act(){
 ### Make Python project
     # Example: mpp <proj-name>
 mpp(){
-    if [ ! -d "${HOME/Dev/$1}" ]; 
+    if [ ! -d "$HOME/Dev/$1" ]; 
         then
             mkdir $HOME/Dev/$1
             cd $HOME/Dev/$1
