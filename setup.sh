@@ -39,7 +39,9 @@ code --install-extension ms-vscode-remote.remote-ssh-edit
 
 
 # Add custom additions to .bashrc file
-cat "on_shell_start.sh" >> "$HOME/.bashrc"
+if ! grep -q jwb-ml-laptop-setup-bashrc_v01 "$HOME/.bashrc"; then
+    cat "on_shell_start_v01.sh" >> "$HOME/.bashrc"
+fi
 
 
 # Add standard directories
