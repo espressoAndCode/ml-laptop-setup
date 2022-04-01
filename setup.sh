@@ -45,8 +45,13 @@ fi
 
 
 # Add standard directories
-mkdir "$HOME/Data" 
-mkdir "$HOME/Dev"
+if [ ! -d "${HOME/Data}" ]; then
+    mkdir "$HOME/Data" 
+fi
+
+if [ ! -d "${HOME/Dev}" ]; then
+    mkdir "$HOME/Dev" 
+fi
 
 # Copy starter templates to Dev/ directory
 cp -a "_templates/." "$HOME/Dev/_templates"
